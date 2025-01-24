@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - MVPRE Horticulture</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+    @import url('https://fonts.googleapis.com/css?family=Orbitron:700');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+    body {
+      overflow-x: hidden;
+      font-family: "Roboto";
+      font-size: 14px;
+      line-height: 1.6;
+      letter-spacing: 1.2px;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .nav-bar {
+      position: fixed;
+      z-index: 100;
+      height: 110px;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0 6%;
+      background-color: #333;
+    }
+
+    .nav-logo {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      font-family: "Montserrat";
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-links-container {
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+      right: 6%;
+      transform: translateY(-50%);
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #999;
+      font-size: 13px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 0 12px;
+      transition: color 0.4s ease;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      color: white;
+    }
+
+    #logo {
+      width: 80px;
+      transform: translate(-65px, 20px);
+    }
+
+    .about-section {
+      padding: 200px 0 100px;
+      background-color: #fff;
+      max-height: min-content;
+    }
+
+    .about-container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      max-height: min-content;
+    }
+
+    .about-header {
+      font-family: "Montserrat";
+      text-transform: uppercase;
+      font-size: 48px;
+      letter-spacing: 8px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .about-text {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #555;
+      margin: 0 auto;
+      width: 75%;
+    }
+
+    .about-values {
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .value-box {
+      flex: 1;
+      padding: 30px;
+      margin: 20px;
+      background-color: #f7f7f7;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .value-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .value-title {
+      font-family: "Orbitron";
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .value-description {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .about-image {
+      width: 100%;
+      height: 400px;
+      background: url('https://via.placeholder.com/1200x400') no-repeat center;
+      background-size: cover;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="nav-bar">
+    <img src="MVPRELOGO.png" alt="MVPRE" id="logo">
+    <div class="nav-logo">MVPRE Horticulture</div>
+    <div class="nav-links-container">
+      <a class="nav-link" href="As above as Below.html">Home</a>
+      <a class="nav-link active" href="aboutSection">About Us</a>
+      <a class="nav-link" href="Plant Listing.html">Plants</a>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <section class="about-section" id="aboutSection">
+    <div class="about-container">
+      <h1 class="about-header">About Us</h1>
+      <p class="about-text">
+        At MVPRE Horticulture, we believe that every space has the potential to thrive with the beauty and vitality of nature. Since our founding in 2010, we've been committed to transforming homes, offices, and public spaces into lush, sustainable environments that nurture both people and plants. 
+        <br><br>
+        Our team of passionate horticulturists, designers, and landscapers works closely with clients to bring their vision to life—whether it's through creating breathtaking indoor greenery, outdoor landscapes, or sustainable garden designs. We take pride in our attention to detail, innovative approach, and dedication to delivering the highest quality of service.
+      </p>
+
+      <div class="about-values">
+        <div class="value-box">
+          <h3 class="value-title">Our Mission</h3>
+          <p class="value-description">
+            To bring nature closer to homes and businesses by providing expert horticultural services that inspire, engage, and rejuvenate spaces with vibrant, healthy plants.
+          </p>
+        </div>
+        <div class="value-box">
+          <h3 class="value-title">Our Vision</h3>
+          <p class="value-description">
+            To lead the industry in sustainable horticulture and landscaping solutions, fostering a greener, more sustainable future for all communities.
+          </p>
+        </div>
+        <div class="value-box">
+          <h3 class="value-title">Our Values</h3>
+          <p class="value-description">
+            Quality, sustainability, and innovation drive everything we do. We're committed to creating eco-friendly, aesthetically pleasing environments that stand the test of time.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-image"></div>
+    </div>
+  </section>
+
+</body>
+</html>
